@@ -40,17 +40,19 @@
   <bean id="DateBean" class="site.luoyu.DI.DateBean">
     <property name="date" value="2016-07-06"/>
   </bean>
+
   <!--  AOP 实现 -->
-  <!--<aop:aspectj-autoproxy /> &lt;!&ndash; 写上代表启用，这里为什么要这么实现?？？&ndash;&gt;-->
+  <!--写上代表启用注解方式AOP，这里为什么要这么实现?？？-->
+  <aop:aspectj-autoproxy />
   <bean id="securityHandler" class="site.luoyu.AOP.SecurityHandler"/>
   <bean id="UserManager" class="site.luoyu.AOP.UserManagerImpl"/>
-  <aop:config>
-    <aop:aspect id="security" ref="securityHandler">
-      <aop:pointcut id="addMethod" expression="execution(* site.luoyu.AOP.UserManagerImpl.add*(..))"/>
-      <aop:before method="checkSecurity" pointcut-ref="addMethod"/>
-    </aop:aspect>
-  </aop:config>
-
-  <context:component-scan base-package="site.luoyu.Context" />
-
+  <!--todo 必须要配置成为Bean？为啥-->
+  <bean id="poet" class="site.luoyu.AOP.annotation.Poet"/>
+  <!--<aop:config>-->
+    <!--<aop:aspect id="security" ref="securityHandler">-->
+      <!--<aop:pointcut id="addMethod" expression="execution(* site.luoyu.AOP.UserManagerImpl.add*(..))"/>-->
+      <!--<aop:before method="checkSecurity" pointcut-ref="addMethod"/>-->
+    <!--</aop:aspect>-->
+  <!--</aop:config>-->
+  <context:component-scan base-package="site.luoyu" />
 </beans>

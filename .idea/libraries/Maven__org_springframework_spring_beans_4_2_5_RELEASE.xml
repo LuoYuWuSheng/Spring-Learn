@@ -1,13 +1,12 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework:spring-beans:4.2.5.RELEASE">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE-sources.jar!/" />
       <root url="file://F:/project/spring-framework/gradle/jdiff" />
       <root url="file://F:/project/spring-framework/spring-aop/src/main/java" />
       <root url="file://F:/project/spring-framework/spring-aop/src/test/java" />
@@ -48,6 +47,7 @@
       <root url="file://F:/project/spring-framework/spring-websocket/src/main/java" />
       <root url="file://F:/project/spring-framework/spring-websocket/src/test/java" />
       <root url="file://F:/project/spring-framework/src/test/java" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

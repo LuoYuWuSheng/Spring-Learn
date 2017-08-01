@@ -19,7 +19,7 @@ public class SecurityHandler {
 	 * Pointcut的内容是一个表达式，描述那些对象的那些方法（订阅Joinpoint）
 	 */
 	@Pointcut("execution(* add*(..)) || execution(* del*(..))")
-	private void allAddMethod(){};
+	private void allAddMethod(){}
 
 	/**
 	 * 定义Advice，标识在那个切入点何处织入此方法

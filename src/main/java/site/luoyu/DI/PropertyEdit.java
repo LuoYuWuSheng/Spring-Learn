@@ -7,6 +7,7 @@ import java.util.Date;
 
 /**
  * Created by luoyu on 2016/8/19 0019.
+ * 自定义的属性编辑器，用于将字符串转换为想要的类型，然后返回到编辑器中。
  */
 public class PropertyEdit extends PropertyEditorSupport{
 

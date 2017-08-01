@@ -13,6 +13,7 @@ import site.luoyu.manager.IUserManager;
 public class Client {
 
     public static InjectComponent injectComponent;
+
     @Autowired
     public static void setInjectComponent(InjectComponent injectComponent) {
         Client.injectComponent = injectComponent;
